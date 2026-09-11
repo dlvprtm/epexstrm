@@ -12,11 +12,11 @@
   }
 
   .frame {
-    width: 80%;
-    max-width: 800px
+    width: 100%;
+    max-width: 900px
     margin: 60px auto;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #white;
     border: 2px solid black;
     border-radius: 20px;
   }
@@ -32,11 +32,11 @@ h1 {
 }
 
 .guide {
-  width: 18%;
-  max-width: 180px;
+  flex: 1;
+  max-width: 220px;
   padding: 30px 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
   color: black;
   bacground-color: #fafafa;
@@ -49,6 +49,29 @@ h1 {
 .guide-name {
   font-size: 20px;
   font-weight: bold;
+}
+
+/* 휴대폰 화면 */
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 10px;
+  }
+
+  .frame {
+    padding: 30px 15px;
+    margin: 30px auto;
+  }
+
+  .guides {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guide {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 </style>
